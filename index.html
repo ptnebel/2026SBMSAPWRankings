@@ -28,13 +28,13 @@
   }
   .hero::before {
     content: '';
-    position: absolute;
-    inset: 0;
+    position: absolute; inset: 0;
     background: repeating-linear-gradient(45deg, transparent, transparent 40px, rgba(46,204,113,0.03) 40px, rgba(46,204,113,0.03) 41px);
   }
-  .hero-league { font-family: 'Barlow Condensed', sans-serif; font-size: 13px; font-weight: 700; letter-spacing: 4px; text-transform: uppercase; color: var(--green); margin-bottom: 8px; }
-  .hero-title { font-family: 'Barlow Condensed', sans-serif; font-size: clamp(36px, 7vw, 64px); font-weight: 900; letter-spacing: -1px; line-height: 1; color: var(--text); margin-bottom: 6px; }
-  .hero-sub { font-size: 14px; color: var(--muted); letter-spacing: 1px; }
+  .hero-league { font-family: 'Barlow Condensed', sans-serif; font-size: 13px; font-weight: 700; letter-spacing: 4px; text-transform: uppercase; color: var(--green); margin-bottom: 8px; position: relative; }
+  .hero-title { font-family: 'Barlow Condensed', sans-serif; font-size: clamp(36px, 7vw, 64px); font-weight: 900; letter-spacing: -1px; line-height: 1; color: var(--text); margin-bottom: 6px; position: relative; }
+  .hero-sub { font-size: 14px; color: var(--muted); letter-spacing: 1px; position: relative; }
+  .hero-tag { display: inline-block; margin-top: 10px; font-size: 11px; color: var(--green); background: rgba(46,204,113,0.1); border: 1px solid rgba(46,204,113,0.3); border-radius: 20px; padding: 3px 12px; letter-spacing: 1px; position: relative; }
   .container { max-width: 900px; margin: 0 auto; padding: 24px 16px 48px; }
   .table-wrap { border: 1px solid var(--border); border-radius: 10px; overflow: hidden; }
   table { width: 100%; border-collapse: collapse; }
@@ -76,6 +76,7 @@
   <div class="hero-league">SBMSA · NL PeeWee · 2026</div>
   <div class="hero-title">Power Rankings</div>
   <div class="hero-sub">Updated through March 3 · Week 1</div>
+  <div class="hero-tag">SOS-Weighted · Strength of Schedule Adjusted</div>
 </div>
 <div class="container">
   <div class="table-wrap">
@@ -95,12 +96,12 @@
     </table>
   </div>
   <div class="footnote">
-    Power Score = 60% Win% + 40% Avg Run Differential (capped ±10 per game) · Ties count as 0.5 wins<br>
-    Teams with 1 game played may have inflated or deflated scores — interpret with caution.
+    Power Score = Win quality (weighted by opponent strength) × 60% + Avg Run Differential (capped ±10) × 40%<br>
+    Scores normalized 0–1 · Iterated until convergence (9 passes) · Teams with 1 GP should be interpreted with caution
   </div>
 </div>
 <script>
-const data = [{"ps":0.98,"team":"Chihuahuas","record":"1-0-0","gp":1,"pf":11,"pa":2,"diff":9.0},{"ps":0.96,"team":"Red Sox","record":"2-0-0","gp":2,"pf":26,"pa":5,"diff":10.5},{"ps":0.94,"team":"Space City","record":"2-0-0","gp":2,"pf":22,"pa":8,"diff":7.0},{"ps":0.94,"team":"Bulls","record":"1-0-0","gp":1,"pf":16,"pa":9,"diff":7.0},{"ps":0.94,"team":"Bananas","record":"1-0-0","gp":1,"pf":8,"pa":1,"diff":7.0},{"ps":0.91,"team":"Nationals","record":"2-0-0","gp":2,"pf":23,"pa":8,"diff":7.5},{"ps":0.9,"team":"Braves","record":"1-0-0","gp":1,"pf":10,"pa":5,"diff":5.0},{"ps":0.9,"team":"Giants","record":"1-0-0","gp":1,"pf":10,"pa":5,"diff":5.0},{"ps":0.9,"team":"Chili Peppers","record":"2-0-0","gp":2,"pf":18,"pa":8,"diff":5.0},{"ps":0.88,"team":"Yankees","record":"1-0-0","gp":1,"pf":7,"pa":3,"diff":4.0},{"ps":0.88,"team":"Blue Jays","record":"1-0-0","gp":1,"pf":7,"pa":3,"diff":4.0},{"ps":0.85,"team":"Rockies City Connect","record":"2-0-0","gp":2,"pf":14,"pa":9,"diff":2.5},{"ps":0.84,"team":"Colt 45s","record":"1-0-0","gp":1,"pf":11,"pa":9,"diff":2.0},{"ps":0.84,"team":"Prospect White","record":"1-0-0","gp":1,"pf":4,"pa":2,"diff":2.0},{"ps":0.84,"team":"Naturals","record":"1-0-0","gp":1,"pf":6,"pa":4,"diff":2.0},{"ps":0.69,"team":"Coconuts","record":"1-0-1","gp":2,"pf":17,"pa":13,"diff":2.0},{"ps":0.69,"team":"Astros","record":"1-0-1","gp":2,"pf":15,"pa":11,"diff":2.0},{"ps":0.5733,"team":"Texas Longhorns","record":"2-1-0","gp":3,"pf":16,"pa":20,"diff":-1.3},{"ps":0.55,"team":"Diamondbacks","record":"1-1-0","gp":2,"pf":14,"pa":9,"diff":2.5},{"ps":0.52,"team":"Party Animals","record":"1-1-0","gp":2,"pf":12,"pa":10,"diff":1.0},{"ps":0.51,"team":"Marlins","record":"1-1-0","gp":2,"pf":14,"pa":13,"diff":0.5},{"ps":0.5,"team":"Aggies","record":"0-0-1","gp":1,"pf":9,"pa":9,"diff":0.0},{"ps":0.5,"team":"Missions","record":"0-0-1","gp":1,"pf":6,"pa":6,"diff":0.0},{"ps":0.49,"team":"White Sox","record":"1-1-0","gp":2,"pf":10,"pa":11,"diff":-0.5},{"ps":0.48,"team":"Expos","record":"1-1-0","gp":2,"pf":12,"pa":14,"diff":-1.0},{"ps":0.3667,"team":"Bayou City Dodgers","record":"1-2-0","gp":3,"pf":18,"pa":23,"diff":-1.7},{"ps":0.18,"team":"Space Cowboys","record":"0-1-0","gp":1,"pf":6,"pa":7,"diff":-1.0},{"ps":0.16,"team":"Hooks","record":"0-1-0","gp":1,"pf":2,"pa":4,"diff":-2.0},{"ps":0.16,"team":"Guardians","record":"0-1-0","gp":1,"pf":4,"pa":6,"diff":-2.0},{"ps":0.16,"team":"Flying Squirrels","record":"0-1-0","gp":1,"pf":4,"pa":6,"diff":-2.0},{"ps":0.14,"team":"Ole Miss Rebels","record":"0-1-0","gp":1,"pf":6,"pa":9,"diff":-3.0},{"ps":0.14,"team":"Sod Poodles","record":"0-1-0","gp":1,"pf":5,"pa":8,"diff":-3.0},{"ps":0.12,"team":"Spicy Meatballs","record":"0-1-0","gp":1,"pf":4,"pa":8,"diff":-4.0},{"ps":0.12,"team":"Indians","record":"0-2-0","gp":2,"pf":8,"pa":16,"diff":-4.0},{"ps":0.11,"team":"Dodgers","record":"0-2-0","gp":2,"pf":10,"pa":19,"diff":-4.5},{"ps":0.1,"team":"Rangers","record":"0-1-0","gp":1,"pf":5,"pa":10,"diff":-5.0},{"ps":0.1,"team":"Monsters","record":"0-1-0","gp":1,"pf":5,"pa":10,"diff":-5.0},{"ps":0.1,"team":"Yard Goats","record":"0-3-0","gp":3,"pf":18,"pa":33,"diff":-5.0},{"ps":0.09,"team":"Outlaws","record":"0-2-0","gp":2,"pf":11,"pa":22,"diff":-5.5},{"ps":0.03,"team":"Chicago Cubs","record":"0-2-0","gp":2,"pf":2,"pa":24,"diff":-11.0},{"ps":0.0,"team":"Tigers","record":"0-1-0","gp":1,"pf":1,"pa":11,"diff":-10.0},{"ps":0.0,"team":"Rockies","record":"0-1-0","gp":1,"pf":2,"pa":16,"diff":-14.0}];
+const data = [{"ps":0.4479,"team":"Chili Peppers","record":"2-0-0","gp":2,"pf":18,"pa":8,"diff":5.0,"ps_display":1.0},{"ps":0.4387,"team":"Red Sox","record":"2-0-0","gp":2,"pf":26,"pa":5,"diff":10.5,"ps_display":0.9795},{"ps":0.434,"team":"Chihuahuas","record":"1-0-0","gp":1,"pf":11,"pa":2,"diff":9.0,"ps_display":0.969},{"ps":0.4318,"team":"Blue Jays","record":"1-0-0","gp":1,"pf":7,"pa":3,"diff":4.0,"ps_display":0.9641},{"ps":0.4284,"team":"Space City","record":"2-0-0","gp":2,"pf":22,"pa":8,"diff":7.0,"ps_display":0.9565},{"ps":0.4,"team":"Bulls","record":"1-0-0","gp":1,"pf":16,"pa":9,"diff":7.0,"ps_display":0.8931},{"ps":0.3649,"team":"Rockies City Connect","record":"2-0-0","gp":2,"pf":14,"pa":9,"diff":2.5,"ps_display":0.8147},{"ps":0.364,"team":"Nationals","record":"2-0-0","gp":2,"pf":23,"pa":8,"diff":7.5,"ps_display":0.8127},{"ps":0.36,"team":"Braves","record":"1-0-0","gp":1,"pf":10,"pa":5,"diff":5.0,"ps_display":0.8038},{"ps":0.36,"team":"Giants","record":"1-0-0","gp":1,"pf":10,"pa":5,"diff":5.0,"ps_display":0.8038},{"ps":0.358,"team":"Bananas","record":"1-0-0","gp":1,"pf":8,"pa":1,"diff":7.0,"ps_display":0.7993},{"ps":0.352,"team":"Yankees","record":"1-0-0","gp":1,"pf":7,"pa":3,"diff":4.0,"ps_display":0.7859},{"ps":0.336,"team":"Prospect White","record":"1-0-0","gp":1,"pf":4,"pa":2,"diff":2.0,"ps_display":0.7502},{"ps":0.336,"team":"Naturals","record":"1-0-0","gp":1,"pf":6,"pa":4,"diff":2.0,"ps_display":0.7502},{"ps":0.3204,"team":"Astros","record":"1-0-1","gp":2,"pf":15,"pa":11,"diff":2.0,"ps_display":0.7153},{"ps":0.3204,"team":"Coconuts","record":"1-0-1","gp":2,"pf":17,"pa":13,"diff":2.0,"ps_display":0.7153},{"ps":0.2961,"team":"Missions","record":"0-0-1","gp":1,"pf":6,"pa":6,"diff":0.0,"ps_display":0.6611},{"ps":0.2961,"team":"Aggies","record":"0-0-1","gp":1,"pf":9,"pa":9,"diff":0.0,"ps_display":0.6611},{"ps":0.294,"team":"Colt 45s","record":"1-0-0","gp":1,"pf":11,"pa":9,"diff":2.0,"ps_display":0.6564},{"ps":0.265,"team":"White Sox","record":"1-1-0","gp":2,"pf":10,"pa":11,"diff":-0.5,"ps_display":0.5916},{"ps":0.253,"team":"Party Animals","record":"1-1-0","gp":2,"pf":12,"pa":10,"diff":1.0,"ps_display":0.5649},{"ps":0.25,"team":"Diamondbacks","record":"1-1-0","gp":2,"pf":14,"pa":9,"diff":2.5,"ps_display":0.5582},{"ps":0.243,"team":"Marlins","record":"1-1-0","gp":2,"pf":14,"pa":13,"diff":0.5,"ps_display":0.5425},{"ps":0.2323,"team":"Texas Longhorns","record":"2-1-0","gp":3,"pf":16,"pa":20,"diff":-1.3,"ps_display":0.5186},{"ps":0.228,"team":"Expos","record":"1-1-0","gp":2,"pf":12,"pa":14,"diff":-1.0,"ps_display":0.509},{"ps":0.1947,"team":"Bayou City Dodgers","record":"1-2-0","gp":3,"pf":18,"pa":23,"diff":-1.7,"ps_display":0.4347},{"ps":0.18,"team":"Space Cowboys","record":"0-1-0","gp":1,"pf":6,"pa":7,"diff":-1.0,"ps_display":0.4019},{"ps":0.16,"team":"Flying Squirrels","record":"0-1-0","gp":1,"pf":4,"pa":6,"diff":-2.0,"ps_display":0.3572},{"ps":0.16,"team":"Hooks","record":"0-1-0","gp":1,"pf":2,"pa":4,"diff":-2.0,"ps_display":0.3572},{"ps":0.16,"team":"Guardians","record":"0-1-0","gp":1,"pf":4,"pa":6,"diff":-2.0,"ps_display":0.3572},{"ps":0.14,"team":"Sod Poodles","record":"0-1-0","gp":1,"pf":5,"pa":8,"diff":-3.0,"ps_display":0.3126},{"ps":0.14,"team":"Ole Miss Rebels","record":"0-1-0","gp":1,"pf":6,"pa":9,"diff":-3.0,"ps_display":0.3126},{"ps":0.12,"team":"Spicy Meatballs","record":"0-1-0","gp":1,"pf":4,"pa":8,"diff":-4.0,"ps_display":0.2679},{"ps":0.12,"team":"Indians","record":"0-2-0","gp":2,"pf":8,"pa":16,"diff":-4.0,"ps_display":0.2679},{"ps":0.11,"team":"Dodgers","record":"0-2-0","gp":2,"pf":10,"pa":19,"diff":-4.5,"ps_display":0.2456},{"ps":0.1,"team":"Yard Goats","record":"0-3-0","gp":3,"pf":18,"pa":33,"diff":-5.0,"ps_display":0.2233},{"ps":0.1,"team":"Monsters","record":"0-1-0","gp":1,"pf":5,"pa":10,"diff":-5.0,"ps_display":0.2233},{"ps":0.1,"team":"Rangers","record":"0-1-0","gp":1,"pf":5,"pa":10,"diff":-5.0,"ps_display":0.2233},{"ps":0.09,"team":"Outlaws","record":"0-2-0","gp":2,"pf":11,"pa":22,"diff":-5.5,"ps_display":0.2009},{"ps":0.03,"team":"Chicago Cubs","record":"0-2-0","gp":2,"pf":2,"pa":24,"diff":-11.0,"ps_display":0.067},{"ps":0.0,"team":"Rockies","record":"0-1-0","gp":1,"pf":2,"pa":16,"diff":-14.0,"ps_display":0.0},{"ps":0.0,"team":"Tigers","record":"0-1-0","gp":1,"pf":1,"pa":11,"diff":-10.0,"ps_display":0.0}];
 
 function barColor(ps) {
   if (ps >= 0.75) return '#2ecc71';
@@ -127,8 +128,8 @@ data.forEach((row, i) => {
   else if (rank === 3) rankHtml = `<span class="rank-medal rank-3">3</span>`;
   else rankHtml = `<span class="rank-num">${rank}</span>`;
   const diffSign = row.diff > 0 ? '+' : '';
-  const barW = Math.round(row.ps * 100);
-  const color = barColor(row.ps);
+  const barW = Math.round(row.ps_display * 100);
+  const color = barColor(row.ps_display);
   tr.innerHTML = `
     <td class="rank-cell">${rankHtml}</td>
     <td><span class="team-name">${row.team}</span><span class="games-badge">${row.gp}GP</span></td>
@@ -139,7 +140,7 @@ data.forEach((row, i) => {
     <td>
       <div class="ps-bar-wrap">
         <div class="ps-bar-bg"><div class="ps-bar" style="width:${barW}%;background:${color}"></div></div>
-        <span class="ps-val" style="color:${color}">${row.ps.toFixed(3)}</span>
+        <span class="ps-val" style="color:${color}">${row.ps_display.toFixed(3)}</span>
       </div>
     </td>`;
   body.appendChild(tr);
