@@ -1,1 +1,38 @@
-[]
+[
+  {
+    "date": "Mon 3/16",
+    "away": "Lake Monsters",
+    "home": "Spicy Meatballs",
+    "away_score": 4,
+    "home_score": 7,
+    "division": "Pee Wee East",
+    "scraped_date": "2026-03-17"
+  },
+  {
+    "date": "Mon 3/16",
+    "away": "Red Sox",
+    "home": "Party Animals",
+    "away_score": 12,
+    "home_score": 2,
+    "division": "Pee Wee Central",
+    "scraped_date": "2026-03-17"
+  },
+  {
+    "date": "Mon 3/16",
+    "away": "Sod Poodles",
+    "home": "Space City",
+    "away_score": 3,
+    "home_score": 6,
+    "division": "Pee Wee Central",
+    "scraped_date": "2026-03-17"
+  },
+  {
+    "date": "Mon 3/16",
+    "away": "Missions",
+    "home": "Coconuts",
+    "away_score": 5,
+    "home_score": 11,
+    "division": "Pee Wee Central",
+    "scraped_date": "2026-03-17"
+  }
+]
