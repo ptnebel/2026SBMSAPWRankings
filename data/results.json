@@ -223,5 +223,14 @@
     "home_score": 5,
     "division": "Pee Wee West",
     "scraped_date": "2026-03-20"
+  },
+  {
+    "date": "Thu 3/19",
+    "away": "Yard Goats",
+    "home": "Outlaws",
+    "away_score": 13,
+    "home_score": 5,
+    "division": "Pee Wee Central",
+    "scraped_date": "2026-03-21"
   }
 ]
