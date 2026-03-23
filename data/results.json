@@ -358,5 +358,32 @@
     "home_score": 6,
     "division": "Pee Wee West",
     "scraped_date": "2026-03-22"
+  },
+  {
+    "date": "Tue 3/17",
+    "away": "White Sox",
+    "home": "Braves",
+    "away_score": 4,
+    "home_score": 11,
+    "division": "Pee Wee East",
+    "scraped_date": "2026-03-23"
+  },
+  {
+    "date": "Sat 3/21",
+    "away": "White Sox",
+    "home": "Green Jays",
+    "away_score": 3,
+    "home_score": 13,
+    "division": "Pee Wee East",
+    "scraped_date": "2026-03-23"
+  },
+  {
+    "date": "Sat 3/21",
+    "away": "Blue Jays",
+    "home": "Hooks",
+    "away_score": 11,
+    "home_score": 3,
+    "division": "Pee Wee West",
+    "scraped_date": "2026-03-23"
   }
 ]
