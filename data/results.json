@@ -484,5 +484,86 @@
     "home_score": 6,
     "division": "Pee Wee East",
     "scraped_date": "2026-03-25"
+  },
+  {
+    "date": "Tue 3/24",
+    "away": "Naturals",
+    "home": "White Sox",
+    "away_score": 13,
+    "home_score": 2,
+    "division": "Pee Wee East",
+    "scraped_date": "2026-03-26"
+  },
+  {
+    "date": "Mon 3/23",
+    "away": "Missions",
+    "home": "Yard Goats",
+    "away_score": 7,
+    "home_score": 12,
+    "division": "Pee Wee Central",
+    "scraped_date": "2026-03-26"
+  },
+  {
+    "date": "Wed 3/25",
+    "away": "Rockies",
+    "home": "Blue Jays",
+    "away_score": 8,
+    "home_score": 9,
+    "division": "Pee Wee West",
+    "scraped_date": "2026-03-26"
+  },
+  {
+    "date": "Wed 3/25",
+    "away": "Cleveland Indians",
+    "home": "Guardians",
+    "away_score": 7,
+    "home_score": 3,
+    "division": "Pee Wee West",
+    "scraped_date": "2026-03-26"
+  },
+  {
+    "date": "Wed 3/25",
+    "away": "Bayou City Dodgers",
+    "home": "Chihuahuas",
+    "away_score": 5,
+    "home_score": 6,
+    "division": "Pee Wee West",
+    "scraped_date": "2026-03-26"
+  },
+  {
+    "date": "Wed 3/25",
+    "away": "Miami Marlins",
+    "home": "Giants",
+    "away_score": 13,
+    "home_score": 7,
+    "division": "Pee Wee West",
+    "scraped_date": "2026-03-26"
+  },
+  {
+    "date": "Wed 3/25",
+    "away": "Flying Squirrels",
+    "home": "Aggies",
+    "away_score": 5,
+    "home_score": 8,
+    "division": "Pee Wee West",
+    "scraped_date": "2026-03-26"
+  },
+  {
+    "date": "Wed 3/25",
+    "away": "Ole Miss Rebels",
+    "home": "Spring Spirit Toros",
+    "away_score": 2,
+    "home_score": 9,
+    "division": "Pee Wee West",
+    "scraped_date": "2026-03-26"
+  },
+  {
+    "date": "Wed 3/25",
+    "away": "Rangers",
+    "home": "Savannah Bananas",
+    "away_score": 4,
+    "home_score": 9,
+    "division": "Pee Wee West",
+    "scraped_date": "2026-03-26"
   }
 ]
