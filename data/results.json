@@ -565,5 +565,50 @@
     "home_score": 9,
     "division": "Pee Wee West",
     "scraped_date": "2026-03-26"
+  },
+  {
+    "date": "Thu 3/26",
+    "away": "Red Sox",
+    "home": "Prospect - White",
+    "away_score": 10,
+    "home_score": 7,
+    "division": "Pee Wee Central",
+    "scraped_date": "2026-03-27"
+  },
+  {
+    "date": "Thu 3/26",
+    "away": "Oregon Ducks",
+    "home": "Coconuts",
+    "away_score": 6,
+    "home_score": 7,
+    "division": "Pee Wee Central",
+    "scraped_date": "2026-03-27"
+  },
+  {
+    "date": "Thu 3/26",
+    "away": "Yard Goats",
+    "home": "Space City",
+    "away_score": 2,
+    "home_score": 8,
+    "division": "Pee Wee Central",
+    "scraped_date": "2026-03-27"
+  },
+  {
+    "date": "Thu 3/26",
+    "away": "Chili Peppers",
+    "home": "Party Animals",
+    "away_score": 8,
+    "home_score": 6,
+    "division": "Pee Wee Central",
+    "scraped_date": "2026-03-27"
+  },
+  {
+    "date": "Wed 3/25",
+    "away": "Hooks",
+    "home": "Texas Longhorns",
+    "away_score": 4,
+    "home_score": 7,
+    "division": "Pee Wee West",
+    "scraped_date": "2026-03-27"
   }
 ]
