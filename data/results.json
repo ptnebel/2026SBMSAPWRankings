@@ -736,5 +736,23 @@
     "home_score": 3,
     "division": "Pee Wee West",
     "scraped_date": "2026-03-29"
+  },
+  {
+    "date": "Sat 3/28",
+    "away": "Braves",
+    "home": "Astros",
+    "away_score": 6,
+    "home_score": 7,
+    "division": "Pee Wee East",
+    "scraped_date": "2026-03-30"
+  },
+  {
+    "date": "Thu 3/26",
+    "away": "Space Cowboys",
+    "home": "Sod Poodles",
+    "away_score": 7,
+    "home_score": 7,
+    "division": "Pee Wee Central",
+    "scraped_date": "2026-03-30"
   }
 ]
