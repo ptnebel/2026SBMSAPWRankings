@@ -826,5 +826,68 @@
     "home_score": 1,
     "division": "Pee Wee West",
     "scraped_date": "2026-03-31"
+  },
+  {
+    "date": "Tue 3/31",
+    "away": "Detroit Tigers",
+    "home": "Lake Monsters",
+    "away_score": 10,
+    "home_score": 6,
+    "division": "Pee Wee East",
+    "scraped_date": "2026-04-01"
+  },
+  {
+    "date": "Tue 3/31",
+    "away": "Durham Bulls",
+    "home": "White Sox",
+    "away_score": 9,
+    "home_score": 4,
+    "division": "Pee Wee East",
+    "scraped_date": "2026-04-01"
+  },
+  {
+    "date": "Tue 3/31",
+    "away": "Astros",
+    "home": "Green Jays",
+    "away_score": 7,
+    "home_score": 10,
+    "division": "Pee Wee East",
+    "scraped_date": "2026-04-01"
+  },
+  {
+    "date": "Tue 3/31",
+    "away": "Chicago Cubs",
+    "home": "Naturals",
+    "away_score": 5,
+    "home_score": 16,
+    "division": "Pee Wee East",
+    "scraped_date": "2026-04-01"
+  },
+  {
+    "date": "Tue 3/31",
+    "away": "Spicy Meatballs",
+    "home": "Colt .45s",
+    "away_score": 9,
+    "home_score": 9,
+    "division": "Pee Wee East",
+    "scraped_date": "2026-04-01"
+  },
+  {
+    "date": "Tue 3/31",
+    "away": "LA Dodgers",
+    "home": "Braves",
+    "away_score": 8,
+    "home_score": 2,
+    "division": "Pee Wee East",
+    "scraped_date": "2026-04-01"
+  },
+  {
+    "date": "Mon 3/30",
+    "away": "Prospect - White",
+    "home": "Outlaws",
+    "away_score": 13,
+    "home_score": 4,
+    "division": "Pee Wee Central",
+    "scraped_date": "2026-04-01"
   }
 ]
