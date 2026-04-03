@@ -961,5 +961,41 @@
     "home_score": 11,
     "division": "Pee Wee West",
     "scraped_date": "2026-04-02"
+  },
+  {
+    "date": "Thu 4/2",
+    "away": "Missions",
+    "home": "Outlaws",
+    "away_score": 12,
+    "home_score": 10,
+    "division": "Pee Wee Central",
+    "scraped_date": "2026-04-03"
+  },
+  {
+    "date": "Thu 4/2",
+    "away": "Space City",
+    "home": "Diamondbacks",
+    "away_score": 9,
+    "home_score": 3,
+    "division": "Pee Wee Central",
+    "scraped_date": "2026-04-03"
+  },
+  {
+    "date": "Thu 4/2",
+    "away": "Chili Peppers",
+    "home": "Space Cowboys",
+    "away_score": 12,
+    "home_score": 6,
+    "division": "Pee Wee Central",
+    "scraped_date": "2026-04-03"
+  },
+  {
+    "date": "Thu 4/2",
+    "away": "Yard Goats",
+    "home": "Oregon Ducks",
+    "away_score": 4,
+    "home_score": 15,
+    "division": "Pee Wee Central",
+    "scraped_date": "2026-04-03"
   }
 ]
