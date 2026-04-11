@@ -1177,5 +1177,23 @@
     "home_score": 9,
     "division": "Pee Wee West",
     "scraped_date": "2026-04-10"
+  },
+  {
+    "date": "Thu 4/2",
+    "away": "Sod Poodles",
+    "home": "Prospect - White",
+    "away_score": 5,
+    "home_score": 6,
+    "division": "Pee Wee Central",
+    "scraped_date": "2026-04-11"
+  },
+  {
+    "date": "Thu 4/9",
+    "away": "Space Cowboys",
+    "home": "Prospect - White",
+    "away_score": 3,
+    "home_score": 8,
+    "division": "Pee Wee Central",
+    "scraped_date": "2026-04-11"
   }
 ]
