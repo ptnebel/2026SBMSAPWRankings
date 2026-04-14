@@ -1339,5 +1339,50 @@
     "home_score": 6,
     "division": "Pee Wee East",
     "scraped_date": "2026-04-13"
+  },
+  {
+    "date": "Mon 4/13",
+    "away": "Nationals",
+    "home": "LA Dodgers",
+    "away_score": 15,
+    "home_score": 3,
+    "division": "Pee Wee East",
+    "scraped_date": "2026-04-14"
+  },
+  {
+    "date": "Mon 4/13",
+    "away": "Chicago Cubs",
+    "home": "Expos",
+    "away_score": 5,
+    "home_score": 9,
+    "division": "Pee Wee East",
+    "scraped_date": "2026-04-14"
+  },
+  {
+    "date": "Mon 4/13",
+    "away": "Durham Bulls",
+    "home": "Detroit Tigers",
+    "away_score": 11,
+    "home_score": 5,
+    "division": "Pee Wee East",
+    "scraped_date": "2026-04-14"
+  },
+  {
+    "date": "Mon 4/13",
+    "away": "LSU Tigers",
+    "home": "Colt .45s",
+    "away_score": 5,
+    "home_score": 11,
+    "division": "Pee Wee East",
+    "scraped_date": "2026-04-14"
+  },
+  {
+    "date": "Mon 4/13",
+    "away": "Spicy Meatballs",
+    "home": "Naturals",
+    "away_score": 4,
+    "home_score": 10,
+    "division": "Pee Wee East",
+    "scraped_date": "2026-04-14"
   }
 ]
