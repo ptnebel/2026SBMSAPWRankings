@@ -1681,5 +1681,59 @@
     "home_score": 9,
     "division": "Pee Wee West",
     "scraped_date": "2026-04-19"
+  },
+  {
+    "date": "Mon 4/20",
+    "away": "Astros",
+    "home": "Chicago Cubs",
+    "away_score": 4,
+    "home_score": 5,
+    "division": "Pee Wee East",
+    "scraped_date": "2026-04-21"
+  },
+  {
+    "date": "Mon 4/20",
+    "away": "Naturals",
+    "home": "Rockies City Connect",
+    "away_score": 10,
+    "home_score": 8,
+    "division": "Pee Wee East",
+    "scraped_date": "2026-04-21"
+  },
+  {
+    "date": "Mon 4/20",
+    "away": "Chili Peppers",
+    "home": "Coconuts",
+    "away_score": 5,
+    "home_score": 16,
+    "division": "Pee Wee Central",
+    "scraped_date": "2026-04-21"
+  },
+  {
+    "date": "Mon 4/20",
+    "away": "Missions",
+    "home": "Party Animals",
+    "away_score": 9,
+    "home_score": 10,
+    "division": "Pee Wee Central",
+    "scraped_date": "2026-04-21"
+  },
+  {
+    "date": "Mon 4/20",
+    "away": "Prospect - White",
+    "home": "Space City",
+    "away_score": 6,
+    "home_score": 7,
+    "division": "Pee Wee Central",
+    "scraped_date": "2026-04-21"
+  },
+  {
+    "date": "Mon 4/20",
+    "away": "Yard Goats",
+    "home": "Sod Poodles",
+    "away_score": 6,
+    "home_score": 8,
+    "division": "Pee Wee Central",
+    "scraped_date": "2026-04-21"
   }
 ]
