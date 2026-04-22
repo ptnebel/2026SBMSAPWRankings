@@ -1735,5 +1735,23 @@
     "home_score": 8,
     "division": "Pee Wee Central",
     "scraped_date": "2026-04-21"
+  },
+  {
+    "date": "Mon 4/20",
+    "away": "Diamondbacks",
+    "home": "Space Cowboys",
+    "away_score": 5,
+    "home_score": 5,
+    "division": "Pee Wee Central",
+    "scraped_date": "2026-04-22"
+  },
+  {
+    "date": "Mon 4/20",
+    "away": "Outlaws",
+    "home": "Oregon Ducks",
+    "away_score": 5,
+    "home_score": 8,
+    "division": "Pee Wee Central",
+    "scraped_date": "2026-04-22"
   }
 ]
