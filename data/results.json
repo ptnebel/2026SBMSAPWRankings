@@ -1825,5 +1825,41 @@
     "home_score": 7,
     "division": "Pee Wee West",
     "scraped_date": "2026-04-23"
+  },
+  {
+    "date": "Thu 4/23",
+    "away": "Astros",
+    "home": "White Sox",
+    "away_score": 11,
+    "home_score": 5,
+    "division": "Pee Wee East",
+    "scraped_date": "2026-04-24"
+  },
+  {
+    "date": "Thu 4/23",
+    "away": "Space City",
+    "home": "Party Animals",
+    "away_score": 10,
+    "home_score": 9,
+    "division": "Pee Wee Central",
+    "scraped_date": "2026-04-24"
+  },
+  {
+    "date": "Thu 4/23",
+    "away": "Prospect - White",
+    "home": "Chili Peppers",
+    "away_score": 8,
+    "home_score": 9,
+    "division": "Pee Wee Central",
+    "scraped_date": "2026-04-24"
+  },
+  {
+    "date": "Thu 4/23",
+    "away": "Red Sox",
+    "home": "Diamondbacks",
+    "away_score": 10,
+    "home_score": 4,
+    "division": "Pee Wee Central",
+    "scraped_date": "2026-04-24"
   }
 ]
