@@ -1861,5 +1861,41 @@
     "home_score": 4,
     "division": "Pee Wee Central",
     "scraped_date": "2026-04-24"
+  },
+  {
+    "date": "Fri 4/24",
+    "away": "Detroit Tigers",
+    "home": "Braves",
+    "away_score": 11,
+    "home_score": 3,
+    "division": "Pee Wee East",
+    "scraped_date": "2026-04-25"
+  },
+  {
+    "date": "Fri 4/24",
+    "away": "Durham Bulls",
+    "home": "Colt .45s",
+    "away_score": 11,
+    "home_score": 5,
+    "division": "Pee Wee East",
+    "scraped_date": "2026-04-25"
+  },
+  {
+    "date": "Thu 4/23",
+    "away": "Oregon Ducks",
+    "home": "Missions",
+    "away_score": 13,
+    "home_score": 3,
+    "division": "Pee Wee Central",
+    "scraped_date": "2026-04-25"
+  },
+  {
+    "date": "Thu 4/23",
+    "away": "Space Cowboys",
+    "home": "Outlaws",
+    "away_score": 4,
+    "home_score": 9,
+    "division": "Pee Wee Central",
+    "scraped_date": "2026-04-25"
   }
 ]
