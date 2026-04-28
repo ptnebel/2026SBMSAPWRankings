@@ -1942,5 +1942,59 @@
     "home_score": 8,
     "division": "Pee Wee Central",
     "scraped_date": "2026-04-26"
+  },
+  {
+    "date": "Sat 4/25",
+    "away": "Space Cowboys",
+    "home": "Yard Goats",
+    "away_score": 11,
+    "home_score": 7,
+    "division": "Pee Wee Central",
+    "scraped_date": "2026-04-28"
+  },
+  {
+    "date": "Mon 4/27",
+    "away": "Outlaws",
+    "home": "Red Sox",
+    "away_score": 2,
+    "home_score": 15,
+    "division": "Pee Wee Central",
+    "scraped_date": "2026-04-28"
+  },
+  {
+    "date": "Mon 4/27",
+    "away": "Party Animals",
+    "home": "Prospect - White",
+    "away_score": 3,
+    "home_score": 4,
+    "division": "Pee Wee Central",
+    "scraped_date": "2026-04-28"
+  },
+  {
+    "date": "Mon 4/27",
+    "away": "Diamondbacks",
+    "home": "Sod Poodles",
+    "away_score": 4,
+    "home_score": 10,
+    "division": "Pee Wee Central",
+    "scraped_date": "2026-04-28"
+  },
+  {
+    "date": "Mon 4/27",
+    "away": "Space City",
+    "home": "Oregon Ducks",
+    "away_score": 8,
+    "home_score": 10,
+    "division": "Pee Wee Central",
+    "scraped_date": "2026-04-28"
+  },
+  {
+    "date": "Mon 4/27",
+    "away": "Coconuts",
+    "home": "Yard Goats",
+    "away_score": 13,
+    "home_score": 6,
+    "division": "Pee Wee Central",
+    "scraped_date": "2026-04-28"
   }
 ]
